@@ -1,5 +1,5 @@
 # Welcome to ANN2SNN 👋
-[![License: GNU General Public License v3.0](https://img.shields.io/badge/License-GNU General Public License v3.0-yellow.svg)](#)
+### Description
 
 > a demo CNN tested on mnist that convert ANN to SNN using snntoolbox, docker supported.
 
