@@ -1,7 +1,7 @@
 # Welcome to ANN2SNN 👋
 ### Description
 
-> a demo CNN tested on mnist that convert ANN to SNN using snntoolbox, docker supported.
+> a demo provided by snntoolbox official, convert cnn to snn tested on mnist, docker supported.
 
 ### Requirments
 
