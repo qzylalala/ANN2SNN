@@ -7,6 +7,8 @@ from tensorflow.keras.utils import to_categorical
 from snntoolbox.bin.run import main
 from snntoolbox.utils.utils import import_configparser
 
+
+
 # WORKING DIRECTORY #
 #####################
 
@@ -15,6 +17,8 @@ from snntoolbox.utils.utils import import_configparser
 path_wd = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(
     __file__)), 'tmp'))
 os.makedirs(path_wd)
+
+
 
 # GET DATASET #
 ###############
@@ -41,6 +45,7 @@ np.savez_compressed(os.path.join(path_wd, 'y_test'), y_test)
 # SNN toolbox will not do any training, but we save a subset of the training
 # set so the toolbox can use it when normalizing the network parameters.
 np.savez_compressed(os.path.join(path_wd, 'x_norm'), x_train[::10])
+
 
 
 # CREATE ANN #
@@ -122,6 +127,8 @@ model.fit(x_train, y_train, batch_size=64, epochs=1, verbose=2,
 model_name = 'mnist_resnet'
 models.save_model(model, os.path.join(path_wd, model_name + '.h5'))
 
+
+
 # SNN TOOLBOX CONFIGURATION #
 #############################
 
@@ -162,6 +169,8 @@ config['output'] = {
 config_filepath = os.path.join(path_wd, 'config')
 with open(config_filepath, 'w') as configfile:
     config.write(configfile)
+
+
 
 # RUN SNN TOOLBOX #
 ###################
