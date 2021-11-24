@@ -1,5 +1,4 @@
 import os
-import time
 import numpy as np
 
 from tensorflow.keras import Input, Model, layers, backend, models
@@ -14,7 +13,7 @@ from snntoolbox.utils.utils import import_configparser
 # Define path where model and output files will be stored.
 # The user is responsible for cleaning up this temporary directory.
 path_wd = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(
-    __file__)), '..', 'temp', str(time.time())))
+    __file__)), 'tmp'))
 os.makedirs(path_wd)
 
 # GET DATASET #
