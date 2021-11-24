@@ -1,7 +1,7 @@
 # Welcome to ANN2SNN 👋
 ### Description
 
-> a demo provided by snntoolbox official, convert cnn to snn tested on mnist, docker supported.
+> a demo provided by snntoolbox official, convert cnn to snn tested on mnist, cifar100.docker supported.
 
 ### Requirments
 
